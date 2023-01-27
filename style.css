@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #201511;
+  border: 25px solid;
+  border-image-source: url(./lucky-stick.webp);
+  border-image-width: 25px;
+  border-image-repeat: repeat;
+  border-image-slice: 7%;
+}
+.container .bgm {
+  position: absolute;
+  right: 4vw;
+  top: 6vh;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: bigAndSmall 1.5s linear infinite, leftAndRight 4s linear infinite;
+          animation: bigAndSmall 1.5s linear infinite, leftAndRight 4s linear infinite;
+}
+.container .bgm img {
+  width: 5vmax;
+  height: 6vmax;
+}
+.container .title {
+  font-size: 5vw;
+  font-weight: 600;
+  margin: 0.5vmax;
+  color: #D8A65F;
+}
+.container .main-parts {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 65vh;
+  margin: 0.5vmax;
+}
+.container .main-parts .display-part {
+  position: relative;
+  width: 55%;
+}
+.container .main-parts .display-part .can {
+  position: absolute;
+  top: 0%;
+  width: 40%;
+  height: 100%;
+  margin-left: 50%;
+}
+.container .main-parts .display-part .stick {
+  position: absolute;
+  width: 6%;
+  left: 65%;
+  top: 0%;
+  opacity: 0;
+}
+.container .main-parts .text-part {
+  width: 40%;
+  border: 25px solid;
+  border-image-source: url(./lucky-stick.webp);
+  border-image-width: 25px;
+  border-image-repeat: repeat;
+  border-image-slice: 7%;
+  margin-right: 20%;
+}
+.container .start-button {
+  margin: 1vmax;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2.5vw;
+  color: #D8A65F;
+  border: 2px solid #D8A65F;
+  background-color: transparent;
+  padding: 0.5vmax;
+  border-radius: 0.5vmax;
+  transition: 1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.container .start-button:hover {
+  background-color: rgba(216, 166, 95, 0.0941176471);
+}
+
+@-webkit-keyframes bigAndSmall {
+  0%, 50%, 100% {
+    scale: 1;
+  }
+  25%, 75% {
+    scale: 1.3;
+  }
+}
+
+@keyframes bigAndSmall {
+  0%, 50%, 100% {
+    scale: 1;
+  }
+  25%, 75% {
+    scale: 1.3;
+  }
+}
+@-webkit-keyframes leftAndRight {
+  0%, 50%, 100% {
+    rotate: -5deg;
+  }
+  25%, 75% {
+    rotate: 5deg;
+  }
+}
+@keyframes leftAndRight {
+  0%, 50%, 100% {
+    rotate: -5deg;
+  }
+  25%, 75% {
+    rotate: 5deg;
+  }
+}/*# sourceMappingURL=style.css.map */
