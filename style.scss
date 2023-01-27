@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif TC', serif;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -18,7 +20,8 @@
     border-image-width: 25px;
     border-image-repeat: repeat;
     border-image-slice: 7%;
-    & .bgm{
+
+    & .bgm {
         position: absolute;
         right: 4vw;
         top: 6vh;
@@ -27,36 +30,41 @@
         cursor: pointer;
         user-select: none;
         animation: bigAndSmall 1.5s linear infinite,
-        leftAndRight 4s linear infinite
-        ;
-        & img{
+            leftAndRight 4s linear infinite;
+
+        & img {
             width: 5vmax;
             height: 6vmax;
         }
     }
-    & .title{
+
+    & .title {
         font-size: 5vw;
         font-weight: 600;
         margin: 0.5vmax;
         color: #D8A65F;
     }
-    & .main-parts{
+
+    & .main-parts {
         display: flex;
         justify-content: center;
         width: 80%;
         height: 65vh;
         margin: 0.5vmax;
-        & .display-part{
+
+        & .display-part {
             position: relative;
             width: 55%;
-            & .can{
+
+            & .can {
                 position: absolute;
                 top: 0%;
                 width: 40%;
                 height: 100%;
                 margin-left: 50%;
             }
-            & .stick{
+
+            & .stick {
                 position: absolute;
                 width: 6%;
                 left: 65%;
@@ -64,7 +72,8 @@
                 opacity: 0;
             }
         }
-        & .text-part{
+
+        & .text-part {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -77,17 +86,20 @@
             border-image-slice: 7%;
             margin-right: 20%;
             color: #D8A65F;
-            & .text-title{
+
+            & .text-title {
                 font-size: 3vw;
                 font-weight: 500;
             }
-            & .text-content{
+
+            & .text-content {
                 font-size: 1.5vw;
                 writing-mode: vertical-rl;
             }
         }
     }
-    & .start-button{
+
+    & .start-button {
         margin: 1vmax;
         width: fit-content;
         font-size: 2.5vw;
@@ -99,62 +111,84 @@
         transition: 1s;
         user-select: none;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             background-color: #d8a65f18;
         }
     }
 }
+
 @keyframes bigAndSmall {
-    0%,50%,100%{
+
+    0%,
+    50%,
+    100% {
         scale: 1;
     }
-    25%,75%{
+
+    25%,
+    75% {
         scale: 1.3;
     }
 }
+
 @keyframes leftAndRight {
-    0%,50%,100%{
+
+    0%,
+    50%,
+    100% {
         rotate: -5deg;
     }
-    25%,75%{
+
+    25%,
+    75% {
         rotate: 5deg;
     }
 }
-@media screen and(width <= 425px)  {
-    .container{
+
+@media screen and(width <=640px) {
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        & .title{
+
+        & .title {
             font-size: 12vw;
         }
-        & .bgm{
+
+        & .bgm {
             position: static;
-            & img{
+
+            & img {
                 width: 4vmax;
                 height: 5vmax;
             }
         }
-        & .main-parts{
+
+        & .main-parts {
             width: 100%;
             height: 60vh;
             flex-wrap: wrap;
-            & .display-part{
+
+            & .display-part {
                 width: 100%;
                 height: 70%;
                 display: flex;
                 justify-content: center;
-                & .can{
+
+                & .can {
                     width: 55%;
                     margin: 1vmax;
-                    
+
                 }
-                & .stick{
+
+                & .stick {
                     display: none;
                 }
             }
-            & .text-part{
+
+            & .text-part {
                 width: 90%;
                 margin: 2vmax;
                 padding: 0.5vmax;
@@ -163,19 +197,22 @@
                 border-image-source: url(./lucky-stick.webp);
                 border-image-repeat: repeat;
                 border-image-slice: 7%;
-                & .text-title{
+
+                & .text-title {
                     font-size: 8vw;
                     margin: 0.5vmax;
                 }
-                & .text-content{
+
+                & .text-content {
                     font-size: 5vw;
-                    writing-mode:horizontal-tb;
+                    writing-mode: horizontal-tb;
                     text-align: center;
                     margin: 0.5vmax;
                 }
             }
         }
-        & .start-button{
+
+        & .start-button {
             font-size: 6vw;
             padding: 1vmax;
             margin: 2vmax;
