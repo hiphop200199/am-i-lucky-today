@@ -127,10 +127,10 @@
         justify-content: center;
         align-items: center;
         & .title{
-            font-size: 10vw;
+            font-size: 13vw;
         }
         & .bgm{
-            position: relative;
+            position: static;
             & img{
                 width: 6vmax;
                 height: 7vmax;
@@ -139,9 +139,24 @@
         & .main-parts{
             width: 100%;
             height: 60vh;
+            & .display-part{
+                & .can{
+                    width: 70%;
+                    margin: 0;
+                }
+            }
+            & .text-part{
+                margin: 0;
+                & .text-title{
+                    font-size: 5vw;
+                }
+                & .text-content{
+                    font-size: 2.5vw;
+                }
+            }
         }
         & .start-button{
-            font-size: 3.5vw;
+            font-size: 6vw;
         }
     }
 }

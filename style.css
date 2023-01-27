@@ -155,10 +155,10 @@
     align-items: center;
   }
   .container .title {
-    font-size: 10vw;
+    font-size: 13vw;
   }
   .container .bgm {
-    position: relative;
+    position: static;
   }
   .container .bgm img {
     width: 6vmax;
@@ -168,7 +168,20 @@
     width: 100%;
     height: 60vh;
   }
+  .container .main-parts .display-part .can {
+    width: 70%;
+    margin: 0;
+  }
+  .container .main-parts .text-part {
+    margin: 0;
+  }
+  .container .main-parts .text-part .text-title {
+    font-size: 5vw;
+  }
+  .container .main-parts .text-part .text-content {
+    font-size: 2.5vw;
+  }
   .container .start-button {
-    font-size: 3.5vw;
+    font-size: 6vw;
   }
 }/*# sourceMappingURL=style.css.map */
