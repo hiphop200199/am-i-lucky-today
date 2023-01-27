@@ -70,6 +70,10 @@
   opacity: 0;
 }
 .container .main-parts .text-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   width: 40%;
   border: 25px solid;
   border-image-source: url(./lucky-stick.webp);
@@ -77,6 +81,16 @@
   border-image-repeat: repeat;
   border-image-slice: 7%;
   margin-right: 20%;
+  color: #D8A65F;
+}
+.container .main-parts .text-part .text-title {
+  font-size: 3vw;
+  font-weight: 500;
+}
+.container .main-parts .text-part .text-content {
+  font-size: 1.5vw;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
 .container .start-button {
   margin: 1vmax;
