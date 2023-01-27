@@ -47,6 +47,8 @@ $(function(){
     let textContent=$(".text-content");
    $(".start-button").on("click",function(){
     textTitle.text("");
+    textContent.text("");
+    let randomNumber=Math.floor(Math.random()*(fortunePoems.length));
     luckyStick.css({"top":"0%","opacity":"0","left":"65%"});
     luckyCan.animate({top:"-5%"},100);
     luckyCan.animate({top:"0%"},100);
@@ -57,8 +59,8 @@ $(function(){
     luckyCan.animate({top:"-5%"},100);
     luckyCan.animate({top:"0%"},100);
     luckyStick.delay(400).animate({top:"0%",opacity:"1"},200).animate({top:"-5%"},200).animate({top:"-8%",left:"40%"},400).animate({top:"-5%",left:"25%"},400);
-    textTitle.text(fortunePoems[Math.floor(Math.random()*(fortunePoems.length))]["title"]);
-    textContent.text(fortunePoems[Math.floor(Math.random()*(fortunePoems.length))]["content"]);
+    textTitle.text(fortunePoems[randomNumber]["title"]);
+    textContent.text(fortunePoems[randomNumber]["content"]);
    })
    
     bgm.on("click",function(){

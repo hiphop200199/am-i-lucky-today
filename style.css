@@ -151,7 +151,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
   .container .title {
@@ -167,25 +167,45 @@
   .container .main-parts {
     width: 100%;
     height: 60vh;
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container .main-parts .display-part {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
   }
   .container .main-parts .display-part .can {
-    width: 70%;
-    margin: 0;
+    width: 55%;
+    margin: 1vmax;
+  }
+  .container .main-parts .display-part .stick {
+    display: none;
   }
   .container .main-parts .text-part {
-    margin: 0;
+    width: 90%;
+    margin: 2vmax;
+    padding: 0.5vmax;
+    border: 15px solid;
+    border-image-width: 15px;
+    border-image-source: url(./lucky-stick.webp);
+    border-image-repeat: repeat;
+    border-image-slice: 7%;
   }
   .container .main-parts .text-part .text-title {
-    font-size: 5vw;
+    font-size: 8vw;
+    margin: 0.5vmax;
   }
   .container .main-parts .text-part .text-content {
-    font-size: 2.5vw;
+    font-size: 5vw;
     -ms-writing-mode: lr-tb;
         writing-mode: horizontal-tb;
+    text-align: center;
+    margin: 0.5vmax;
   }
   .container .start-button {
     font-size: 6vw;
     padding: 1vmax;
+    margin: 2vmax;
   }
 }/*# sourceMappingURL=style.css.map */
